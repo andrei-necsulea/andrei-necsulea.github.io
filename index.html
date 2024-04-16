@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My CV</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-fFE5y7MdZoH/gZ09hpPRU7TtDJ6IT3cDgl72eRaQI9cWZGNj7E396KDsIbkcYTFy+yrwV43HNEDoj5UgFTf+gw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-fFE5y7MdZoH/gZ09hpPRU7TtDJ6IT3cDgl72eRaQI9cWZGNj7E396KDsIbkcYTFy+yrwV43HNEDoj5UgFTf+gw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn 
+{
+  from 
+  {
+    opacity: 0;
+  }
+  to 
+  {
+    opacity: 1;
+  }
+}
+
+  body 
+  {
+    background-image: url("bg.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: Arial, sans-serif;
+    color: #333; 
+    margin: 0;
+    padding: 0;
+    opacity: 85%;
+    animation: fadeIn 1s ease-in;
+    overflow: hidden;
+  }
+
+  header 
+  {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+  }
+
+  h1 
+  {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+
+  nav ul 
+  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li 
+  {
+    display: inline-block; 
+    margin-right: 20px;
+  }
+
+  nav ul li a 
+  {
+    text-decoration: none; 
+    color: #333;
+    font-size: 16px;
+  }
+
+  main 
+  {
+    padding: 20px;
+  }
+
+  h2 
+  {
+    font-size: 20px; 
+    color: #333;
+  }
+
+  p 
+  {
+    line-height: 1.8;
+     color:#fff;
+ /* Increase line height for better readability */
+  }
+
+
+
+  .social-icons a 
+  {
+    color: #fff; 
+    margin-right: 10px;
+  }
+
+
+  footer 
+  {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    position: fixed;
+    width: 100%;
+    height:20%;
+    bottom: 0;
+}
+
+.social-icons a 
+{
+    color: #fff; 
+    margin-right: 10px;
+}
+
+.container 
+{
+    width: 80%;
+    margin: 0 auto; 
+}
+
+a 
+{
+    text-decoration: none; 
+    color: #333;
+}
+
+#about , #education , #experience  
+{
+    position: absolute;
+    top:123px; 
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    overflow: hidden;
+}
+
+#about > div.container 
+{
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+#education > div.container
+{
+   max-width: 800px;
+   margin:0 auto;
+}
+
+#experience > div.container
+{
+   max-width: 800px;
+   margin:0 auto;
+}
+
+#about h2,
+#about h3,
+#about p, #education h2 , #education h3 , #education p , #experience h2 , #experience h3 , #experience p
+{
+    margin: 0; 
+}
+
+#about p , #education p , #experience p
+{
+    margin-left : 5%;
+}
+
+#about h3 , #education h3 , #experience h3
+{
+   margin-top:5%;
+   margin-bottom: 2%;
+}
+
+#education li p
+{
+   margin-top: 8%;
+}
+
+#experience h2 , #experience h1{
+  color: #fff;
+}
+
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) 
+{
+    .container 
+    {
+        width: 90%; 
+    }
+
+    header 
+    {
+        padding: 10px;
+    }
+
+    h1 
+    {
+        font-size: 20px;
+    }
+
+    nav ul li 
+    {
+        margin-right: 10px;
+    }
+
+    nav ul li a 
+    {
+        font-size: 14px;
+    }
+
+    main 
+    {
+        padding: 10px;
+    }
+
+    h2 
+    {
+        font-size: 18px; 
+    }
+
+    p 
+    {
+        font-size: 14px; 
+        color: #fff;
+    }
+
+    footer 
+    {
+        padding: 15px; 
+    }
+
+    p
+    {
+      line-height: 1.6;
+    }
+
+    #about
+    {
+      top:114px;
+    }
+
+    #education
+    {
+      top:114px;
+    }
+
+    #experience
+    {
+      top : 114px;
+    }
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <img src="me.jpg" alt="Profile Image" style="width: 80px; height: 80px; border-radius: 50%; float: left; margin-right: 30px;margin-bottom: 10%;">
+    <h1>Andrei-Mihai Necsulea</h1>
+    <br>
+    <a href="https://github.com/andrei-necsulea"><li style="list-style:none;"><i class="fa fa-github" style="font-size:48px;color:black;float: right;"></i></li></a>
+    <br>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('experience')">Projects&Experience</a></li>
+        <li><a href="#" onclick="showSection('education')">Education</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="about" style="display: none;padding-bottom: 5%;overflow: auto;">
+    <div class="container" >
+      <h2 style="opacity:75%; font-size: 35px ;color:white;background-color:blue;display: inline-block;">About Me</h2>
+      <h3>&nbsp;&nbsp;Who am I ?</h3>
+      <p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First of all, I am an IT passionate young man who wants to discover and to go deeper and deeper into the mysteries of programming. <br> &nbsp;&nbsp;&nbsp;&nbsp;I can describe myself as an emphatic and communicative person, open to new experiences and a valuable colleague. <br><br> 
+      <h3>&nbsp;&nbsp;What do I think?</h3> 
+      <p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am 19 yrs old and think that, in general terms, the age is NOT just a number. In my case, it reflects the fact that I am a freshener into IT domain, BUT have the power to come up with shiny ideas and the ability to see new horizons.</p>      </p>
+    <br><br>
+    </div>
+  </section>
+
+  <br><br>
+
+
+  <section id="experience" style="display: none;padding-bottom: 5%;overflow: auto;">
+    <div class="container" >
+      <h2 style="opacity:75%; font-size: 35px; color:white;background-color:blue;display: inline-block;">Projects&Experience</h2>
+      <br><br>
+      <h2>What are my qualifications ?</h2>
+      <br><br>
+      <h2>Programming Languages:</h2>
+<ul>
+  <li>C basics (studied on first semester in University)</li>
+  <li>C Data Structures and Algorithms (studied on first semester in University)</li>
+  <li>C++ basics</li>
+  <li>C++ Data Structures and Algorithms (mostly from High School)</li>
+  <li>Python - entry level (Modules that I've worked with: Pandas, Matplotlib, Numpy, Tkinter, BeautifulSoup)</li>
+  <li>HTML, CSS, Javascript (Basics only)</li>
+  <li>R language (Basics only)</li>
+</ul>
+
+<h2>Databases:</h2>
+<ul>
+  <li>SQL, SQL LITE - Basics only (delete columns from table, joining tables etc.)</li>
+</ul>
+
+<h2>Operating Systems:</h2>
+<ul>
+  <li>Windows XP, 7, 10, 11 (good skills)</li>
+  <li>Ubuntu, Linux Mint, Fedora (entry level)</li>
+</ul>
+
+<h2>Hardware:</h2>
+<ul>
+  <li>Raspberry PI (base knowledge)</li>
+  <li>Change computer components (RAM, Processor, SSD etc.)</li>
+</ul>
+
+<h2>Software:</h2>
+<ul>
+  <li>Desktop Applications in Python with GUI</li>
+  <li>Small Websites (HTML, CSS & basic Javascript)</li>
+  <li>Git knowledge</li>
+</ul>
+      <h3>PROJECTS</h3> 
+     <p>
+      Visit my github profile to see my projects : <a href="https://github.com/andrei-necsulea"><i class="fa fa-github" style="font-size:48px;color:green;"></i></a>
+     </p>
+    <br><br>
+    </div>
+  </section>
+
+  <section id="education" style="display: none;padding-bottom: 5%;overflow: auto;">
+    <div class="container" >
+      <h2 style="opacity:75%; font-size: 35px; color:white;background-color:blue;display: inline-block;">Education</h2>
+      <li style="list-style: none;"><p>High School : Elena Cuza - National College , Profile : mathematics-informatics , intensive informatics (C++, HTML & CSS background)</p></li>
+      <li style="list-style: none;"><p>At the moment : Student at Faculty of Automation , Computers & Electronics , Enrolled in 1<sup>st</sup> Year</p></li>
+    <br><br>
+    </div>
+  </section>
+
+  
+</main>
+
+<br><br>
+
+<footer>
+  <div class="container">
+    <section id="contact">
+      <div class="container">
+        <h2 style="color:#fff;">Contact Me</h2>
+        <p>Email: necsulea.andrei.2004@gmail.com</p>
+        <p>Phone: +40 727 635 540</p>
+      </div>
+    </section>
+    <p>&copy; </p>
+</footer>
+
+      <script>
+let welcomeMessage , byeByeMessage;
+
+window.onload = function() 
+{
+  var currentUrl = window.location.href;
+  var showWelcomeMessage = !currentUrl.includes('about') && !currentUrl.includes('experience') && !currentUrl.includes('education');
+
+  if (showWelcomeMessage) 
+  {
+    // Show welcome message
+    welcomeMessage = document.createElement('div');
+    welcomeMessage.innerHTML = '<div style="text-align:center"><h2 style="opacity:75%;font-size:48px;color:white;background-color:blue;display: inline;">WELCOME !<br></h2><br><br><p style="font-size:30px;background-color:blue;display: inline;opacity:75%">This is my CV! Please look briefly!<br></p></div>';
+    document.body.appendChild(welcomeMessage);
+  }
+};
+
+function showSection(sectionId) 
+{
+   
+  //Hide Welcome Message
+  welcomeMessage.style.display = 'none';
+
+  // Hide all sections
+  var sections = document.querySelectorAll('main section');
+  sections.forEach(function(section) 
+  {
+    section.style.display = 'none';
+  });
+
+  // Show the clicked section
+  var sectionToShow = document.getElementById(sectionId);
+  if (sectionToShow) 
+  {
+    sectionToShow.style.display = 'block';
+
+  }
+
+  // Show "Bye bye" message if on the Contact page
+  if (sectionId === 'contact') 
+  {
+    byeByeMessage = document.createElement('div');
+    byeByeMessage.innerHTML = '<div style="text-align:center"><h2 style="opacity:75%;font-size:48px;color:white;background-color:blue;display: inline;">Have a nice day ! <br><br> Best regards ! </h2><br><br><p style="font-size:30px;background-color:blue;display: inline;opacity:75%">Thank you for your time! <br></p></div>';
+    document.body.appendChild(byeByeMessage);
+  }
+   else
+   {
+    byeByeMessage.style.display = 'none';
+   }
+  
+}
+
+        </script>
+      </body>
